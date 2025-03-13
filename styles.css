@@ -1,1 +1,33 @@
+.wrapper {
+  display:flex;
+}
 
+.content{
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.sidebar {
+    width: 475px;
+    background-color: black;
+    padding: 25px;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    text-align: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}

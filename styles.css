@@ -146,6 +146,172 @@ footer {
   text-align: right;
 }
 
-.show-contact{
-  
+.show-contact { 
+  right: 0;
+  top: 400px;
+}
+
+.sidebar-contact button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  float:left;
+}
+
+.contact-tab {
+  display: none;
+}
+
+.contact-tab h3 {
+  margin-top: 0;
+}
+
+.contact-tab p {
+  margin: 5px 0;
+}
+
+.contact-tab-link {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid #ffffff; 
+  transition: border-bottom 0.3s;
+}
+
+.contact-tab-link:hover {
+  color: #cacaca;
+  border-bottom: 2px solid #9c9c9c; 
+  text-decoration: none;
+}
+
+@media (max-width: 750px){
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-bar {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.image-gallery {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  display: none;
+  margin: 0 auto;
+}
+
+.image-gallery img:first-child {
+  display: block; /* First image */
+}
+
+.image-gallery video {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Initially hide the video */
+  margin: 0 auto;
+}
+
+.gallery-image {
+  max-width: 100%;
+  min-width: 500px;
+}
+
+.collapse {
+  cursor: pointer;
+}
+
+.collapse-content {
+  display: none;
+}
+
+.arrow {
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.5s ease;
+}
+
+.collapse.expand .arrow {
+  transform: rotate(90deg);
+}
+
+.biography {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 750px){
+  .biography {
+    max-width: 90%  ;
+  }
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  width: 100%;
+  transition: top 0.5s;
+  position: relative;
+  z-index: 1000; 
+  margin: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ddd; 
+}
+
+body {
+  padding-top: 0px; 
 }

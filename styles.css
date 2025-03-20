@@ -2,7 +2,7 @@
   --primary-bg: #333;
   --secondary-bg: #f4f4f4;
   --primary-color: #fff;
-  --accent-color: #4596ff;
+  --accent-color: #827e82;
   --shadow: rgba(0, 0, 0, 0.1);
 }
 
@@ -98,13 +98,14 @@ a {
 }
 
 a:hover {
-  color: #427bc7;
-  border-bottom: 2px solid #427bc7;
+  color: #827e82;
+  border-bottom: 2px solid #827e82;
+  text-decoration: none;
   font-weight: bold;
 }
 
 a:visited {
-  color: #fd70ff;
+  color: #827e82;
   text-decoration: none;
 }
 

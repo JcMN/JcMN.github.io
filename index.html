@@ -23,13 +23,39 @@
       <ul>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#portfolio">Portfolio Overview</a></li>
         <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#portfolio">Portfolio Overview</a></li>
         <li><a href="#contact">Contact Information</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Wrapper to contain Sidebar and Main Content -->
+  <!-- <div class="wrapper"> -->
+     <!--Sidebar-->
+     <!-- <button id="toggleSidebar">Toggle Sidebar</button>
+     <aside class="sidebar sidebar--default">
+      <div class="profile-header">
+        <h2>Juan Carlos Narvaez</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <script>
+      document.getElementById("toggleSidebar").addEventListener("click", function(){
+      document.querySelector(".sidebar-contact").classList.toggle("show");
+      });
+    </script>
+  </div> -->
+
+  <!--Main Content Area-->
   <section id="about-me">
     <h2>About Me</h2>
     <p>
@@ -37,7 +63,7 @@
       I have a Bachelor of Science in Computer Science with a Minor in History from the University of Prince Edward Island. I currently have a
       strong interest in game design with a focus on Real-Time strategy games and RPGs, and I plan to push my dream further. My main goal is to
       create amazing experiences through video games and offer a unique experience using great story-telling and top-notch gameplay. 
-    </p><br>
+    </p>
     <ul>
       <li>Proficient in: C/C++, Python</li>
       <li>Experience in: Java, Dart, C#</li>
@@ -58,15 +84,43 @@
     </ul>
   </section>
 
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <article>
+      <h3>Uniformed Asset Protection Personnel - Loblaws Companies, Atlantic Superstore</h3>
+      <p class="sub-header">October 2024 - Current | Charlottetown, PEI, Canada</p>
+      <p>
+        Provided customer service, greeted customers, and helped ensure store security and loss prevention while maintaining a safe environment for customers 
+        and colleagues.
+      </p>
+    </article>
+    <article>
+      <h3>Laboratory Assistant | Tutor -  University of Prince Edward Island</h3>
+      <p class="sub-header">January 2024 - April 2024 | Charlottetown, PEI, Canada</p>
+      <p>
+        Assisted first-year students in CS1910 Labs, troubleshooting technical issues and guiding them through programming concepts. Provided support 
+        to the Lab Leader and Professor by proctoring exams and ensuring academic integrity. Offered tailored explanations to enhance student comprehension 
+        of programming fundamentals.
+      </p>
+    </article>
+    <article>
+      <h3>Sales Assistant | Goods Transport - SOFISA, S.A.</h3>
+      <p class="sub-header">January 2021 - August 2021 | Panama City, Panama</p>
+      <p>
+        Customer service with minor sales and assistance with logistics and inventory management.
+      </p>
+    </article>
+  </section>
+
   <section id="portfolio">
     <h2>Portfolio</h2>
     <article>
-      <h3>OpenGL Font Map Rendering | <a target="_blank" href="https://github.com/JcMN/C-FontMap-OpenGL-Assignment">Github</a></h3>
+      <h3>OpenGL Font Map Rendering | <a target="_blank" href="https://github.com/JcMN/C-FontMap-OpenGL-Assignment">GitHub</a></h3>
       <p class="sub-header">Class work - January 2025</p>
       <p>
         Developed a text rendering system using Font Maps at my final year of university, built on top of a basic engine called Wolf provided in class.
         Created 3 classes Font, TextBox and TextTable to manage the text rendering system. Implemented a system In the Font class to read XML files to 
-        obtain the information for the fonr map. Made the TextTable to read a CSV file with the pre created strings to be used. Added dynamic replacement
+        obtain the information for the font map. Made the TextTable to read a CSV file with the pre created strings to be used. Added dynamic replacement
         for the strings and both vertical and horizontal allignment. Project made with OpenGL, C++ and pugiXML.
       </p>
     </article>
@@ -74,7 +128,18 @@
       <h3>Grocery Keeper Mobile Application for Android | <a target="_blank" href="https://github.com/UPEI-Android/cs3130-2023-groupprojects-shovelwaresquad">GitHub</a></h3>
       <p class="sub-header">Class Project - Android Application - Januray 2023 -  April 2023</p>
       <p>
-        Developed an Android application with a team of 3 for 
+        Developed an Android application with a team of 3 using GitHub to plan the project. The app tracks a user generated gorecery list and offers the locations
+        of any sales or best prices of the items based on price comparisons. It is made using Dart, Flutter and SQLite for storing the lists and a a web scrapper to 
+        scrap the information from the websites. I contributed mainly the database, the lists logic, the dark mode toggle, colour choices and ironing out bugs.
+      </p>
+    </article>
+    <article>
+      <h3>OpenGL Scene Culling | <a target="_blank" href="https://github.com/JcMN/C--Frustum-and-Space-Culling">GitHub</a></h3>
+      <p class="sub-header">Class work - January 2025 - February 2025</p>
+      <p>
+        Developed a Scene that has both frustum and space culling via a quadtree at my final year of university, built on top of a basic engine called Wolf 
+        provided in class. Everything works on node system with nodes extending to any object in theory, while for the example only cubes and the camera extend
+        nodes. Both the frustum and space culling work perfectly and cull any object not seen. Currently only spheres bounding volumes work ut boxes are planned.
       </p>
     </article>
   </section>

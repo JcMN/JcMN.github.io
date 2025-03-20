@@ -77,7 +77,7 @@ strong {
 }
 
 article {
-  color: #555;
+  color: #000000;
 }
 
 ul {
@@ -156,9 +156,9 @@ footer {
 
 .sidebar--default {
   width: 475px;
-  background-color: black;
+  background-color: var(--primary-bg);
   padding: 25px;
-  color: white;
+  color: var(--primary-color);
   box-shadow: 2px 0 5px var(--shadow);
 }
 

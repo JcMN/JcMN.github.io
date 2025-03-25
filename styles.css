@@ -213,7 +213,7 @@ footer {
 }
 
 .contact-tab {
-  display: none;
+  display: block;
 }
 
 .contact-tab h3 {
@@ -240,6 +240,10 @@ footer {
 
 .profile-header {
   text-align: center;
+}
+
+.profile-header h2{
+  color:  var(--primary-color);
 }
 
 .profile-picture img {
@@ -342,4 +346,16 @@ footer {
   .biography {
     max-width: 90%;
   }
+}
+
+#toggleSidebar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 2000;
 }
